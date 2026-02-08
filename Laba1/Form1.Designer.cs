@@ -31,221 +31,342 @@ partial class Form1
     {
         label1 = new System.Windows.Forms.Label();
         label2 = new System.Windows.Forms.Label();
-        textBox1 = new System.Windows.Forms.TextBox();
-        textBox2 = new System.Windows.Forms.TextBox();
         label3 = new System.Windows.Forms.Label();
-        textBox3 = new System.Windows.Forms.TextBox();
         label4 = new System.Windows.Forms.Label();
-        textBox4 = new System.Windows.Forms.TextBox();
+        next = new System.Windows.Forms.Button();
         label5 = new System.Windows.Forms.Label();
-        textBox5 = new System.Windows.Forms.TextBox();
+        btnShow = new System.Windows.Forms.Button();
+        panel1 = new System.Windows.Forms.Panel();
         label6 = new System.Windows.Forms.Label();
-        textBox6 = new System.Windows.Forms.TextBox();
+        comboBox1 = new System.Windows.Forms.ComboBox();
+        district = new System.Windows.Forms.TextBox();
+        housingDepartmentNumber = new System.Windows.Forms.NumericUpDown();
+        residentName = new System.Windows.Forms.TextBox();
+        residentHouseNum = new System.Windows.Forms.TextBox();
+        tariff = new System.Windows.Forms.NumericUpDown();
+        paidResidentsCount = new System.Windows.Forms.NumericUpDown();
+        balance = new System.Windows.Forms.NumericUpDown();
+        employeeCount = new System.Windows.Forms.NumericUpDown();
+        savedShow = new System.Windows.Forms.Label();
+        prev = new System.Windows.Forms.Button();
+        exit = new System.Windows.Forms.Button();
         label7 = new System.Windows.Forms.Label();
-        textBox7 = new System.Windows.Forms.TextBox();
-        label8 = new System.Windows.Forms.Label();
-        textBox8 = new System.Windows.Forms.TextBox();
-        button1 = new System.Windows.Forms.Button();
-        label9 = new System.Windows.Forms.Label();
-        label10 = new System.Windows.Forms.Label();
+        saveBtn = new System.Windows.Forms.Button();
+        ((System.ComponentModel.ISupportInitialize)housingDepartmentNumber).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)tariff).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)paidResidentsCount).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)balance).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)employeeCount).BeginInit();
         SuspendLayout();
         // 
         // label1
         // 
-        label1.Location = new System.Drawing.Point(317, 126);
+        label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)204));
+        label1.Location = new System.Drawing.Point(30, 21);
         label1.Name = "label1";
-        label1.Size = new System.Drawing.Size(168, 492);
+        label1.Size = new System.Drawing.Size(391, 64);
         label1.TabIndex = 0;
-        label1.Text = "label1";
+        label1.Text = "Лабораторная работа 1";
+        label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
         // label2
         // 
-        label2.Location = new System.Drawing.Point(12, 126);
+        label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)204));
+        label2.Location = new System.Drawing.Point(30, 85);
         label2.Name = "label2";
-        label2.Size = new System.Drawing.Size(110, 33);
+        label2.Size = new System.Drawing.Size(391, 64);
         label2.TabIndex = 1;
-        label2.Text = "Район";
-        // 
-        // textBox1
-        // 
-        textBox1.Location = new System.Drawing.Point(128, 123);
-        textBox1.Name = "textBox1";
-        textBox1.Size = new System.Drawing.Size(99, 23);
-        textBox1.TabIndex = 2;
-        // 
-        // textBox2
-        // 
-        textBox2.Location = new System.Drawing.Point(128, 156);
-        textBox2.Name = "textBox2";
-        textBox2.Size = new System.Drawing.Size(99, 23);
-        textBox2.TabIndex = 4;
+        label2.Text = "Вариант 4 - ЖЭК";
+        label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
         // label3
         // 
-        label3.Location = new System.Drawing.Point(12, 159);
+        label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)204));
+        label3.Location = new System.Drawing.Point(30, 143);
         label3.Name = "label3";
-        label3.Size = new System.Drawing.Size(110, 33);
-        label3.TabIndex = 3;
-        label3.Text = "Номер ЖЭК";
-        // 
-        // textBox3
-        // 
-        textBox3.Location = new System.Drawing.Point(128, 189);
-        textBox3.Name = "textBox3";
-        textBox3.Size = new System.Drawing.Size(67, 23);
-        textBox3.TabIndex = 6;
+        label3.Size = new System.Drawing.Size(391, 64);
+        label3.TabIndex = 2;
+        label3.Text = "Выполнили: Федоров, Фомин";
+        label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
         // label4
         // 
-        label4.Location = new System.Drawing.Point(12, 192);
+        label4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)204));
+        label4.Location = new System.Drawing.Point(30, 193);
         label4.Name = "label4";
-        label4.Size = new System.Drawing.Size(110, 33);
-        label4.TabIndex = 5;
-        label4.Text = "Резиденты (имя, номер дома)";
+        label4.Size = new System.Drawing.Size(391, 67);
+        label4.TabIndex = 3;
+        label4.Text = "Группа 24ВП1";
+        label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
-        // textBox4
+        // next
         // 
-        textBox4.Location = new System.Drawing.Point(128, 222);
-        textBox4.Name = "textBox4";
-        textBox4.Size = new System.Drawing.Size(99, 23);
-        textBox4.TabIndex = 8;
+        next.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)204));
+        next.Location = new System.Drawing.Point(137, 278);
+        next.Name = "next";
+        next.Size = new System.Drawing.Size(179, 51);
+        next.TabIndex = 4;
+        next.Text = "Далее";
+        next.UseVisualStyleBackColor = true;
+        next.Click += button1_Click;
         // 
         // label5
         // 
-        label5.Location = new System.Drawing.Point(12, 225);
+        label5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)204));
+        label5.Location = new System.Drawing.Point(30, 9);
         label5.Name = "label5";
-        label5.Size = new System.Drawing.Size(110, 33);
-        label5.TabIndex = 7;
-        label5.Text = "Количество оплативших";
+        label5.Size = new System.Drawing.Size(391, 33);
+        label5.TabIndex = 5;
+        label5.Text = "Вывод информации";
+        label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        label5.Visible = false;
         // 
-        // textBox5
+        // btnShow
         // 
-        textBox5.Location = new System.Drawing.Point(128, 255);
-        textBox5.Name = "textBox5";
-        textBox5.Size = new System.Drawing.Size(99, 23);
-        textBox5.TabIndex = 10;
+        btnShow.Location = new System.Drawing.Point(82, 244);
+        btnShow.Name = "btnShow";
+        btnShow.Size = new System.Drawing.Size(280, 28);
+        btnShow.TabIndex = 6;
+        btnShow.Text = "Показать информацию";
+        btnShow.UseVisualStyleBackColor = true;
+        btnShow.Visible = false;
+        btnShow.Click += btnShow_Click;
+        // 
+        // panel1
+        // 
+        panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+        panel1.Location = new System.Drawing.Point(0, 278);
+        panel1.Name = "panel1";
+        panel1.Size = new System.Drawing.Size(446, 5);
+        panel1.TabIndex = 7;
+        panel1.Visible = false;
         // 
         // label6
         // 
-        label6.Location = new System.Drawing.Point(12, 258);
+        label6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)204));
+        label6.Location = new System.Drawing.Point(30, 287);
         label6.Name = "label6";
-        label6.Size = new System.Drawing.Size(110, 33);
-        label6.TabIndex = 9;
-        label6.Text = "Тариф";
+        label6.Size = new System.Drawing.Size(391, 33);
+        label6.TabIndex = 8;
+        label6.Text = "Изменение информации";
+        label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        label6.Visible = false;
         // 
-        // textBox6
+        // comboBox1
         // 
-        textBox6.Location = new System.Drawing.Point(128, 288);
-        textBox6.Name = "textBox6";
-        textBox6.Size = new System.Drawing.Size(99, 23);
-        textBox6.TabIndex = 12;
+        comboBox1.BackColor = System.Drawing.SystemColors.Window;
+        comboBox1.FormattingEnabled = true;
+        comboBox1.Items.AddRange(new object[] { "Район", "Номер ЖЭК\'a", "Резиденты", "Количество оплативших резидентов", "Тариф", "Баланс", "Количество работников" });
+        comboBox1.Location = new System.Drawing.Point(29, 328);
+        comboBox1.Name = "comboBox1";
+        comboBox1.Size = new System.Drawing.Size(391, 23);
+        comboBox1.TabIndex = 9;
+        comboBox1.Visible = false;
+        comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged_1;
+        // 
+        // district
+        // 
+        district.Location = new System.Drawing.Point(29, 364);
+        district.Name = "district";
+        district.Size = new System.Drawing.Size(391, 23);
+        district.TabIndex = 10;
+        district.Visible = false;
+        // 
+        // housingDepartmentNumber
+        // 
+        housingDepartmentNumber.Location = new System.Drawing.Point(25, 364);
+        housingDepartmentNumber.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+        housingDepartmentNumber.Name = "housingDepartmentNumber";
+        housingDepartmentNumber.Size = new System.Drawing.Size(395, 23);
+        housingDepartmentNumber.TabIndex = 11;
+        housingDepartmentNumber.Visible = false;
+        // 
+        // residentName
+        // 
+        residentName.Location = new System.Drawing.Point(25, 364);
+        residentName.Name = "residentName";
+        residentName.Size = new System.Drawing.Size(258, 23);
+        residentName.TabIndex = 12;
+        residentName.Visible = false;
+        // 
+        // residentHouseNum
+        // 
+        residentHouseNum.Location = new System.Drawing.Point(289, 364);
+        residentHouseNum.Name = "residentHouseNum";
+        residentHouseNum.Size = new System.Drawing.Size(135, 23);
+        residentHouseNum.TabIndex = 13;
+        residentHouseNum.Visible = false;
+        // 
+        // tariff
+        // 
+        tariff.DecimalPlaces = 2;
+        tariff.Location = new System.Drawing.Point(25, 364);
+        tariff.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+        tariff.Name = "tariff";
+        tariff.Size = new System.Drawing.Size(403, 23);
+        tariff.TabIndex = 14;
+        tariff.Visible = false;
+        // 
+        // paidResidentsCount
+        // 
+        paidResidentsCount.Location = new System.Drawing.Point(25, 364);
+        paidResidentsCount.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+        paidResidentsCount.Name = "paidResidentsCount";
+        paidResidentsCount.Size = new System.Drawing.Size(403, 23);
+        paidResidentsCount.TabIndex = 14;
+        paidResidentsCount.Visible = false;
+        // 
+        // balance
+        // 
+        balance.DecimalPlaces = 2;
+        balance.Location = new System.Drawing.Point(25, 364);
+        balance.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+        balance.Name = "balance";
+        balance.Size = new System.Drawing.Size(403, 23);
+        balance.TabIndex = 15;
+        balance.Visible = false;
+        // 
+        // employeeCount
+        // 
+        employeeCount.Location = new System.Drawing.Point(25, 364);
+        employeeCount.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+        employeeCount.Name = "employeeCount";
+        employeeCount.Size = new System.Drawing.Size(403, 23);
+        employeeCount.TabIndex = 16;
+        employeeCount.Visible = false;
+        // 
+        // savedShow
+        // 
+        savedShow.ForeColor = System.Drawing.Color.ForestGreen;
+        savedShow.Location = new System.Drawing.Point(159, 435);
+        savedShow.Name = "savedShow";
+        savedShow.Size = new System.Drawing.Size(133, 31);
+        savedShow.TabIndex = 17;
+        savedShow.Text = "Сохранено";
+        savedShow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        savedShow.Visible = false;
+        // 
+        // prev
+        // 
+        prev.Location = new System.Drawing.Point(22, 435);
+        prev.Name = "prev";
+        prev.Size = new System.Drawing.Size(133, 31);
+        prev.TabIndex = 18;
+        prev.Text = "<<< Назад";
+        prev.UseMnemonic = false;
+        prev.UseVisualStyleBackColor = false;
+        prev.Visible = false;
+        prev.Click += prev_Click;
+        // 
+        // exit
+        // 
+        exit.Location = new System.Drawing.Point(295, 433);
+        exit.Name = "exit";
+        exit.Size = new System.Drawing.Size(133, 31);
+        exit.TabIndex = 19;
+        exit.Text = "Выход\r\n";
+        exit.UseMnemonic = false;
+        exit.UseVisualStyleBackColor = false;
+        exit.Visible = false;
+        exit.Click += exit_Click;
         // 
         // label7
         // 
-        label7.Location = new System.Drawing.Point(12, 291);
+        label7.BackColor = System.Drawing.SystemColors.ControlLight;
+        label7.Location = new System.Drawing.Point(29, 67);
         label7.Name = "label7";
-        label7.Size = new System.Drawing.Size(110, 33);
-        label7.TabIndex = 11;
-        label7.Text = "Баланс";
+        label7.Size = new System.Drawing.Size(391, 174);
+        label7.TabIndex = 20;
+        label7.Visible = false;
         // 
-        // textBox7
+        // saveBtn
         // 
-        textBox7.Location = new System.Drawing.Point(128, 321);
-        textBox7.Name = "textBox7";
-        textBox7.Size = new System.Drawing.Size(99, 23);
-        textBox7.TabIndex = 14;
-        // 
-        // label8
-        // 
-        label8.Location = new System.Drawing.Point(12, 324);
-        label8.Name = "label8";
-        label8.Size = new System.Drawing.Size(110, 33);
-        label8.TabIndex = 13;
-        label8.Text = "Количество работников";
-        // 
-        // textBox8
-        // 
-        textBox8.Location = new System.Drawing.Point(201, 189);
-        textBox8.Name = "textBox8";
-        textBox8.Size = new System.Drawing.Size(26, 23);
-        textBox8.TabIndex = 15;
-        // 
-        // button1
-        // 
-        button1.Location = new System.Drawing.Point(12, 356);
-        button1.Name = "button1";
-        button1.Size = new System.Drawing.Size(214, 41);
-        button1.TabIndex = 16;
-        button1.Text = "Обновить";
-        button1.UseVisualStyleBackColor = true;
-        button1.Click += button1_Click;
-        // 
-        // label9
-        // 
-        label9.Location = new System.Drawing.Point(19, 425);
-        label9.Name = "label9";
-        label9.Size = new System.Drawing.Size(66, 30);
-        label9.TabIndex = 17;
-        label9.Text = "Счетчик";
-        // 
-        // label10
-        // 
-        label10.Location = new System.Drawing.Point(70, 425);
-        label10.Name = "label10";
-        label10.Size = new System.Drawing.Size(66, 30);
-        label10.TabIndex = 18;
-        label10.Text = "0";
+        saveBtn.Location = new System.Drawing.Point(159, 393);
+        saveBtn.Name = "saveBtn";
+        saveBtn.Size = new System.Drawing.Size(133, 39);
+        saveBtn.TabIndex = 21;
+        saveBtn.Text = "Сохранить";
+        saveBtn.UseMnemonic = false;
+        saveBtn.UseVisualStyleBackColor = false;
+        saveBtn.Visible = false;
+        saveBtn.Click += saveBtn_Click;
         // 
         // Form1
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        ClientSize = new System.Drawing.Size(526, 1341);
-        Controls.Add(label10);
-        Controls.Add(label9);
-        Controls.Add(button1);
-        Controls.Add(textBox8);
-        Controls.Add(textBox7);
-        Controls.Add(label8);
-        Controls.Add(textBox6);
+        BackColor = System.Drawing.SystemColors.Control;
+        ClientSize = new System.Drawing.Size(436, 476);
+        Controls.Add(saveBtn);
         Controls.Add(label7);
-        Controls.Add(textBox5);
+        Controls.Add(exit);
+        Controls.Add(prev);
+        Controls.Add(savedShow);
+        Controls.Add(employeeCount);
+        Controls.Add(balance);
+        Controls.Add(tariff);
+        Controls.Add(paidResidentsCount);
+        Controls.Add(residentHouseNum);
+        Controls.Add(residentName);
+        Controls.Add(housingDepartmentNumber);
+        Controls.Add(district);
+        Controls.Add(comboBox1);
         Controls.Add(label6);
-        Controls.Add(textBox4);
+        Controls.Add(panel1);
+        Controls.Add(btnShow);
         Controls.Add(label5);
-        Controls.Add(textBox3);
+        Controls.Add(next);
         Controls.Add(label4);
-        Controls.Add(textBox2);
         Controls.Add(label3);
-        Controls.Add(textBox1);
         Controls.Add(label2);
         Controls.Add(label1);
+        Location = new System.Drawing.Point(15, 15);
         Text = "Form1";
+        ((System.ComponentModel.ISupportInitialize)housingDepartmentNumber).EndInit();
+        ((System.ComponentModel.ISupportInitialize)tariff).EndInit();
+        ((System.ComponentModel.ISupportInitialize)paidResidentsCount).EndInit();
+        ((System.ComponentModel.ISupportInitialize)balance).EndInit();
+        ((System.ComponentModel.ISupportInitialize)employeeCount).EndInit();
         ResumeLayout(false);
         PerformLayout();
     }
 
-    private System.Windows.Forms.Label label9;
-    private System.Windows.Forms.Label label10;
+    private System.Windows.Forms.Button saveBtn;
 
-    private System.Windows.Forms.Button button1;
+    private System.Windows.Forms.Label label7;
 
-    private System.Windows.Forms.TextBox textBox1;
+    private System.Windows.Forms.Button prev;
+    private System.Windows.Forms.Button exit;
+
+    private System.Windows.Forms.Label savedShow;
+
+    private System.Windows.Forms.NumericUpDown tariff;
+    private System.Windows.Forms.NumericUpDown paidResidentsCount;
+    private System.Windows.Forms.NumericUpDown balance;
+    private System.Windows.Forms.NumericUpDown employeeCount;
+
+    private System.Windows.Forms.TextBox residentName;
+    private System.Windows.Forms.TextBox residentHouseNum;
+
+    private System.Windows.Forms.TextBox district;
+    private System.Windows.Forms.NumericUpDown housingDepartmentNumber;
+
+    private System.Windows.Forms.ComboBox comboBox1;
+
+    private System.Windows.Forms.Label label6;
+
+    private System.Windows.Forms.Panel panel1;
+
+    private System.Windows.Forms.Button btnShow;
+
+    private System.Windows.Forms.Label label5;
+
     private System.Windows.Forms.Label label1;
     private System.Windows.Forms.Label label2;
-    private System.Windows.Forms.TextBox textBox2;
     private System.Windows.Forms.Label label3;
-    private System.Windows.Forms.TextBox textBox3;
     private System.Windows.Forms.Label label4;
-    private System.Windows.Forms.TextBox textBox4;
-    private System.Windows.Forms.Label label5;
-    private System.Windows.Forms.TextBox textBox5;
-    private System.Windows.Forms.Label label6;
-    private System.Windows.Forms.TextBox textBox6;
-    private System.Windows.Forms.Label label7;
-    private System.Windows.Forms.TextBox textBox7;
-    private System.Windows.Forms.Label label8;
-    private System.Windows.Forms.TextBox textBox8;
+    private System.Windows.Forms.Button next;
+
 
     #endregion
 }

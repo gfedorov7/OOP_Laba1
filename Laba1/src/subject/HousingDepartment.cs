@@ -83,11 +83,13 @@ public class HousingDepartment
         return
             $"Район: {District}\n" +
             $"Номер ЖЭК: {HousingDepartmentNumber}\n" +
+            $"Номер ЖЭК HEX: {GetHousingDepartmentNumberHex()}\n" +
             $"Количество жильцов: {Residents.Length}\n" +
             $"Количество оплативших жильцов: {PaidResidentsCount}\n" +
             $"Тариф: {Tariff}\n" +
             $"Баланс: {Balance}\n" +
-            $"Количество работников: {EmployeeCount}\n";
+            $"Количество работников: {EmployeeCount}\n" +
+            $"Количество созданных объектов: {ObjectCount}\n";
     }
 
     public string GetInfoAboutResidents()
