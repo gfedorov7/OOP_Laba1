@@ -41,8 +41,8 @@ public class HousingDepartment
     {
         District = "Не указан";
         HousingDepartmentNumber = 0;
-        _residents = new Resident[0];
-        _paidResidentsCount = 0;
+        Residents = new Resident[0];
+        PaidResidentsCount = 0;
         Tariff = 0;
         Balance = 0;
         EmployeeCount = 0;
@@ -71,8 +71,8 @@ public class HousingDepartment
         int employeeCount
     ) : this(district, housingDepartmentNumber)
     {
-        _residents = residents;
-        _paidResidentsCount = paidResidentsCount;
+        Residents = residents;
+        PaidResidentsCount = paidResidentsCount;
         Tariff = tariff;
         Balance = balance;
         EmployeeCount = employeeCount;
