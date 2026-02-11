@@ -7,7 +7,9 @@ public class HousingDepartment
     public static int ObjectCount { get; private set; }
     
     public string District { get; set; }
+
     public int HousingDepartmentNumber { get; set; }
+
     private Resident[] _residents;
 
     public Resident[] Residents
@@ -22,6 +24,7 @@ public class HousingDepartment
     }
 
     private int _paidResidentsCount;
+
     public int PaidResidentsCount
     {
         get => _paidResidentsCount;

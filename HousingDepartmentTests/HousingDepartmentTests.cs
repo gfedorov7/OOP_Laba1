@@ -56,9 +56,12 @@ public sealed class HousingDepartmentTests
     [TestMethod]
     public void ObjectCountTest()
     {
+        int before = HousingDepartment.ObjectCount;
+        
         var housingDepartment1 = new HousingDepartment();
         var housingDepartment2 = new HousingDepartment("test");
-        Assert.AreEqual(2, HousingDepartment.ObjectCount);
+        
+        Assert.AreEqual(before + 2, HousingDepartment.ObjectCount);
     }
 
     [TestMethod]
