@@ -366,6 +366,7 @@ partial class Form1
         label_saved_status.TabIndex = 7;
         label_saved_status.Text = "Сохранено!";
         label_saved_status.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        label_saved_status.Visible = false;
         // 
         // label_output_info
         // 
@@ -450,6 +451,7 @@ partial class Form1
         Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
         MaximumSize = new System.Drawing.Size(628, 723);
         MinimumSize = new System.Drawing.Size(526, 451);
+        Text = "ЖЭК";
         panel1.ResumeLayout(false);
         tableLayoutPanel1.ResumeLayout(false);
         tableLayoutPanel2.ResumeLayout(false);
