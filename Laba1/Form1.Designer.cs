@@ -419,6 +419,7 @@ partial class Form1
         // 
         // comboBox_fields
         // 
+        comboBox_fields.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
         comboBox_fields.FormattingEnabled = true;
         comboBox_fields.Items.AddRange(new object[] { "Район", "Номер ЖЭК\'a", "Резиденты", "Количество оплативших резидентов", "Тариф", "Баланс", "Количество работников" });
         comboBox_fields.Location = new System.Drawing.Point(3, 476);
@@ -426,7 +427,6 @@ partial class Form1
         comboBox_fields.Size = new System.Drawing.Size(536, 28);
         comboBox_fields.TabIndex = 14;
         comboBox_fields.SelectedIndexChanged += comboBox_fields_SelectedIndexChanged;
-        comboBox_fields.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
         // 
         // button_save
         // 
@@ -450,6 +450,7 @@ partial class Form1
         Controls.Add(panel1);
         Location = new System.Drawing.Point(19, 19);
         Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+        MaximizeBox = false;
         MaximumSize = new System.Drawing.Size(628, 723);
         MinimumSize = new System.Drawing.Size(526, 451);
         Text = "ЖЭК";
