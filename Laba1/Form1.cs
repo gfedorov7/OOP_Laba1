@@ -25,7 +25,19 @@ public partial class Form1 : Form
         _instance = new HousingDepartment();
         _instance = new HousingDepartment();
         _instance = new HousingDepartment();
-        _instance = new HousingDepartment();
+        _instance = new HousingDepartment(
+            "Фоминский",
+            25,
+            new Resident[2]
+            {
+                new Resident(1, "Глеб Федоров"), 
+                new Resident(2, "Роман Песков"),
+            },
+            1,
+            500,
+            50182882,
+            12
+        );
         panel2.Visible = false;
         tableLayoutPanel2.Visible = false;
     }
