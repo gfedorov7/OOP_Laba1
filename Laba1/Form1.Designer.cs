@@ -426,6 +426,7 @@ partial class Form1
         comboBox_fields.Size = new System.Drawing.Size(536, 28);
         comboBox_fields.TabIndex = 14;
         comboBox_fields.SelectedIndexChanged += comboBox_fields_SelectedIndexChanged;
+        comboBox_fields.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
         // 
         // button_save
         // 
